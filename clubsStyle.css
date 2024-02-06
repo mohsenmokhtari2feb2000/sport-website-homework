@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 70vw;
+    height: 300px;
+    /* background-color: #ced1dac5; */
+    background-color: rgb(19, 14, 67);
+    border-radius: 0px 0px 10px 10px;
+    /* border-bottom: rgb(24, 163, 228) solid 4px;
+    box-shadow: rgba(0, 200, 255, 0.215) -10px 10px ; */
+    margin-left: 15%;
+    /* opacity: 0.67; */
+}
+body{
+    background: linear-gradient(90deg, #ced1da,#57ADBF);
+}
+main{
+    width: 80vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.185);
+    /* opacity: 0.2; */
+    margin-left: 9%;
+margin-top: 20px;
+border-radius: 10px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+
+}
+.main-div{
+    width: 400px;
+    height: 950px;
+    /* background: linear-gradient(180deg, rgb(193, 193, 193) , rgb(0, 21, 255)); */
+    background-color: #2B2E63;
+    margin: 10px;
+    border-radius: 10px;
+    filter: blur(3px);
+    transition: all 0.2s linear;
+    
+    
+}
+.main-div:hover{
+    filter: none;
+    transform: scale(1.01);
+}
+.title{
+    color: rgb(251, 255, 0);
+    font-size: 2.6rem;
+    margin: 30px 80px;
+    font-weight: 900;
+    font-family: 'Teko', sans-serif;
+}
+.card{
+    display: flex;
+    width: 350px;
+    height: 110px;
+    background-color: #798DC5;
+    margin-left: 25px;
+    border: 10px black ;
+    border-style: inset;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+.card img{
+    width: 100px;
+    height: 100px;
+}
+.card p{
+    font-size: 2rem;
+    align-self: center;
+    margin-left: 20px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+header p{
+    font-size: 3rem;
+    font-family: 'Rubik Glitch Pop', system-ui;
+    color: white;
+    margin-left: 30px;
+}
+.span{
+    rotate: 10deg;
+    display: inline-block;
+    margin: 50px 300px;
+    font-size: 7rem;
+    color: rgb(255, 230, 0);
+}
+
+
+@media (min-width: 426px) and (max-width: 769px){
+
+    .span{
+        rotate: 0deg;
+        margin: 0;
+        font-size: 5rem;
+        margin-left: 200px;
+    }
+    header{
+        width: 100%;
+        margin: 10px;
+        height: auto;
+    }
+    .main-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .card p{
+        margin-left: 200px;
+    }
+    .card img{
+        margin-left: 30px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 426px){
+    .span{
+        rotate: 0deg;
+        margin: 0;
+        font-size: 3.5rem;
+    }
+    header{
+        width: 100%;
+        margin: 10px;
+        height: auto;
+    }
+    .main-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+        margin-right: 25px;
+    }
+
+}
+
+
+
